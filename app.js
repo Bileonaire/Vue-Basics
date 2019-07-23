@@ -1,19 +1,14 @@
-const helloWorld = new Vue({
-	el: '#helloVue',
-	data: {
-		title: 'Hello, World!',
-		message: 'this is aLEOn',
-	},
-});
-
-const example = new Vue({
-	el: '#example',
-	data: {
-		title: 'Hello, example!',
-		message: 'this is example',
-		img: {
-			src: 'https://placeimg.com/200/200/animals',
-			alt: 'A placeholder image of animals',
-		},
-	},
+const book = new Vue({
+    el: '#book',
+    data: {
+      title: 'The Sirens of Titan',
+      author: 'Kurt Vonnegut',
+      summary: 'This is a summary of the Sirens of Titan.',
+      showDetail: false
+    },
+    methods: {
+        toggleDetails: function(){
+            this.showDetail = !this.showDetail;
+        }
+    }
 });
