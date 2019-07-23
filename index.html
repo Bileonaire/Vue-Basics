@@ -14,7 +14,11 @@
         <div id="bookDetail" v-show="showDetail">
             <p>{{ author }}</p>
             <p>{{ summary }} </p>
+            <ul>
+                <li v-bind:style="{color:colour}" v-for="(colour, index) in rainbow"> {{ colour + index }}</li>
+            </ul>
         </div>
+
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <script src="app.js"></script>
